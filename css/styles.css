@@ -13,12 +13,20 @@ body {
 
 /* General styling for the container holding the cards */
 .container {
-    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* Card styling */
 .card {
-    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.8);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
 }
 
 /* Styling for the card title (h2) */
@@ -37,7 +45,9 @@ body {
 
 /* Styling for the image inside each card */
 .card img {
-    
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 /* Styling for the "Learn More" button */
@@ -89,10 +99,11 @@ body {
 /* Responsive adjustments for smaller screen sizes */
 @media (max-width: 768px) {
     .container {
-        
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        
+        width: 100%;
     }
 }
